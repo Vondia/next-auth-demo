@@ -33,5 +33,5 @@
 }
 
 .nav-item.active {
-    @apply bg-white text-slate-500 border border-slate-500 cursor-none
+    @apply bg-white text-slate-500 border border-slate-500 cursor-not-allowed;
 }

@@ -21,7 +21,7 @@ export default async function Home() {
       <h2 className="text-2xl font-bold mt-4">Excercises</h2>
       <ul className=" mt-4">
         <li className="rounded-xl border border-slate-500 p-4 mb-4 flex gap-4">
-          <input type="checkbox" id="excercise-1" />{" "}
+          <input type="checkbox" id="excercise-1" defaultChecked />{" "}
           <label htmlFor="excercise-1">
             Make sure the protected route and admin route are only visible for
             logged in users.
