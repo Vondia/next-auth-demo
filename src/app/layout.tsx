@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import Navigation from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`bg-slate-100 ${inter.className}`}>
+
+        <div className="container m-auto max-w-3xl p-4 rounded-xl bg-white mt-4">
+        <header className="border-b border-slate-500 h-16">
+          <Navigation />
+        </header>
+        <main className="flex min-h-[50vh] flex-col flex-start p-24">
+          {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }
